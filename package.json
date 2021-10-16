@@ -1,21 +1,21 @@
 {
   "name": "screenshooter",
-  "version": "0.2.0",
+  "version": "3.0.0",
   "description": "Generates a screenshot of any web page - as API or command line.",
-  "author": "Weld.io",
+  "author": "Tom Söderlund",
   "license": "ISC",
   "main": "api/webpageScreenshot.js",
   "keywords": [
     "screenshot",
     "web"
   ],
-  "homepage": "https://github.com/weld-io/screenshooter",
+  "homepage": "https://github.com/tomsoderlund/screenshooter",
   "repository": {
     "type": "git",
-    "url": "git://github.com/weld-io/screenshooter.git"
+    "url": "git://github.com/tomsoderlund/screenshooter.git"
   },
   "bugs": {
-    "url": "https://github.com/weld-io/screenshooter/issues"
+    "url": "https://github.com/tomsoderlund/screenshooter/issues"
   },
   "scripts": {
     "dev": "now dev --listen 3337",
