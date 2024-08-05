@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "/api/webpageScreenshot.js", "use": "@vercel/node", "config": { "maxLambdaSize": "40mb" } },
+    { "src": "/api/imageScreenshot.js", "use": "@vercel/node", "config": { "maxLambdaSize": "40mb" } },
+    { "src": "/api/imageSimple.js", "use": "@vercel/node", "config": { "maxLambdaSize": "40mb" } },
+    { "src": "/api/imagePage.js", "use": "@vercel/node", "config": { "maxLambdaSize": "40mb" } }
+  ],
+  "routes": [
+    { "src": "/?", "dest": "/api/webpageScreenshot.js" },
+    { "src": "/image?", "dest": "/api/imageScreenshot.js" },
+    { "src": "/imageSimple?", "dest": "/api/imageSimple.js" },
+    { "src": "/imagePage?", "dest": "/api/imagePage.js" }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true"
+  }
+}
