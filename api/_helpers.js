@@ -71,7 +71,7 @@ const fetchImageWithPuppeteer = async function (pageUrl, { loadExtraTime, format
 
   const browser = await puppeteer.launch({
     args: chrome.args,
-    executablePath: await chrome.executablePath,
+    executablePath: await chrome.executablePath(),
     headless: chrome.headless
   })
   const page = await browser.newPage()
