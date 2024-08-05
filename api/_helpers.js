@@ -6,7 +6,7 @@
 
 'use strict'
 
-const chrome = require('chrome-aws-lambda')
+const chrome = require('@sparticuz/chromium')
 const puppeteer = process.env.NODE_ENV === 'production' ? require('puppeteer-core') : require('puppeteer')
 
 const parseRequestParams = url => (url.split('?')[0] || '/').substr(1).split('/')
